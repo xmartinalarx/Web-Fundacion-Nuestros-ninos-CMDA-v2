@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-color: black;
+  }
+  .fsz{    
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:1000;
+    font-style: normal;
+  }
+  /* Arriva */
+  .etiqueta{
+      width: 35%;
+      text-align: center;
+      position: absolute;
+      top: 15%;
+      left: 33%;
+      z-index: 101;
+      background-color: #ffffff;
+      font-size: 1.4vw;
+      border-radius: 40px;
+  }
+  .etiqueta .f{
+      font-size: 3.7vw;
+  }
+  .etiqueta i{
+      position: absolute;
+        top: 50%; /* Posición vertical para el texto "INSCRIPCIÓN" */
+      left: 10%; /* Posición horizontal */
+      transform: translate(-50%, -50%); /* Centrar el texto */
+  }
+  .etiqueta .arriva{
+      position: relative;
+      top: 55%; /* Posición vertical para el texto "INSCRIPCIÓN" */
+      left: 60%; /* Posición horizontal */
+      transform: translate(-50%, -50%)
+  }
+  .etiqueta .abajo{
+      position: absolute;
+      top: 28%; /* Posición vertical para el texto "INSCRIPCIÓN" */
+      right:-10%; /* Posición horizontal */
+      transform: translate(-50%, -50%); /* Centrar el texto */
+  }
+  #Intro {
+    width: 100%;
+    height: 45%;
+    z-index: 100;
+    position: absolute ;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  .Contenedor_letra {
+    width: 80%;
+    height: 45%;
+    position: relative; /* Cambia a relativa */
+    margin-bottom: 10%; /* Agrega un margen inferior para dejar espacio para la etiqueta .info */
+    color: #ffffff;
+    font-size: 2.7vw; /* Tamaño de fuente relativo al 3% del ancho de la ventana */
+    top: 60%; /* Centrar verticalmente */
+    left: 55%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar el texto */
+  }
+  
+  .Formulario {
+    position: absolute;
+    top: 25%; /* Posición vertical para el texto "FORMULARIO" */
+    left: 11%; /* Posición horizontal */
+    transform: translate(-50%, -50%); /* Centrar el texto */
+  }
+  
+  .inscripción {
+    position: absolute;
+    top: 48%; /* Posición vertical para el texto "INSCRIPCIÓN" */
+    left: 35%; /* Posición horizontal */
+    transform: translate(-50%, -50%); /* Centrar el texto */
+  }
+/* INFO */
+.info {
+  position: absolute;
+  width: 85%;
+  margin: 50px;
+  font-size: 110%;
+  color: #ffffff;
+}
+.info p{
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:800;
+  font-style: normal;
+  width: 80%;
+}
+.Boton_init{
+  position: relative;
+  left:  85%;
+  bottom: 70px;
+  width: 180px;
+  height: 70px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, rgba(13,0,214,1) 9%, rgba(242,135,200,1) 74%);
+  border: 0px;
+  transition: 0.5s;
+}
+.Boton_init:hover{
+  transform: scale(1.2);
+}
+@media screen and (max-width: 799px) {
+  .Boton_init {
+    position: relative;
+    top: 20px;
+    left: 35%; /* Mover el botón hacia la derecha un 30% del ancho del contenedor padre */
+  }
+
+  .info p {
+    width: 100%; /* Ajustar el ancho del párrafo dentro de .info */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+  }
+  
+}
+@media screen and (max-width: 425px) {
+  .etiqueta {
+    width: 60%;
+    height: 8%;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 23%;
+    z-index: 101;
+    background-color: #ffffff;
+    font-size: 1.4vw; 
+    border-radius: 40px;
+}
+  .Boton_init {
+    position: relative;
+    top: 50px; /* Mover el botón hacia abajo 50px */
+    left: 0%; /* Mover el botón hacia la izquierda un 30% del ancho del contenedor padre */
+  }
+  .info p {
+    width: 100%; /* Ajustar el ancho del párrafo dentro de .info */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+  }
+  .Contenedor_letra {
+    width: 80%;
+    height: 45%;
+    position: relative; /* Cambia a relativa */
+    margin-bottom: 15%; /* Agrega un margen inferior para dejar espacio para la etiqueta .info */
+    color: #ffffff;
+    font-size: 100%; /* Tamaño de fuente relativo al 3% del ancho de la ventana */
+    top: 60%; /* Centrar verticalmente */
+    transform: translate(-50%, -50%); /* Centrar el texto */
+    
+  }
+  .etiqueta .abajo{
+      position: absolute;
+      top: 28%; /* Posición vertical para el texto "INSCRIPCIÓN" */
+      right:0%; /* Posición horizontal */
+      transform: translate(-50%, -50%); /* Centrar el texto */
+      font-size: 3vw;
+  }
+  .etiqueta .arriva{
+    position: relative;
+    top: 5%; /* Posición vertical para el texto "INSCRIPCIÓN" */
+    left: 60%; /* Posición horizontal */
+    transform: translate(-50%, -50%);
+    font-size: 3.0vw;
+}
+.Formulario {
+  position: absolute;
+  top: 25%;
+  left: 11%;
+  transform: translate(-15%, -50%);
+}
+.inscripción {
+  position: absolute;
+  top: 38%;
+  left: 35%;
+  transform: translate(-20%, -50%);
+}
+}
+@media screen and (max-height: 425px) {
+  .Formulario {
+    position: absolute;
+    top: 25%;
+    left: 11%;
+    transform: translate(-15%, -50%);
+  }
+  .inscripción {
+    position: absolute;
+    top: 130px;
+    left: 35%;
+    transform: translate(-20%, -50%);
+  }
+
+}
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Inscripción</title>
+<link rel="stylesheet" href="http://localhost/Formulario/assent/css/Formulario.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 class="Formulario_letra" style="color: #fff;">FORMULARIO</h1>
+        <div class="containers">
+            <div class="text-box">
+                <h2>- Se requiere un formulario completo por cada niño que se inscriba para ​garantizar una gestión precisa de los registros.</h2>
+                <h2>- La inscripción está abierta para niños de 7 a 15 años para adaptarse mejor a ​sus necesidades e intereses.</h2>
+            </div>
+    </header>
+    <section class="formulario">
+        <h2>FORMULARIO</h2>
+        <form action="#">
+            <label for="nombre_nino">NOMBRE COMPLETO DEL NIÑO:</label>
+
+            <input type="text" id="nombre_nino" name="nombre_nino" placeholder="Ingrese el dato sugerido">
+
+            <label for="fecha_nacimiento">FECHA DE NACIMIENTO DEL NIÑO:</label>
+
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Ingrese el dato sugerido">
+
+            <label>GÉNERO DEL NIÑO:</label>
+
+            <label for="genero_hombre"><input type="radio" id="genero_hombre" name="genero" value="hombre"> Hombre</label> 
+            
+            <label for="genero_mujer"> <input type="radio" id="genero_mujer" name="genero" value="mujer"> Mujer</label>
+
+            <label for="nombre_padre_tutor">NOMBRE DEL PADRE O TUTOR LEGAL:</label>
+
+            <input type="text" id="nombre_padre_tutor" name="nombre_padre_tutor" placeholder="Ingrese el dato sugerido">
+
+            <label for="telefono_padre_tutor">NÚMERO DE TELÉFONO DEL PADRE O TUTOR LEGAL:</label>
+
+            <input type="tel" id="telefono_padre_tutor" name="telefono_padre_tutor" placeholder="Ingrese el dato sugerido">
+
+            <label for="direccion_padre_tutor">DIRECCIÓN POSTAL DEL PADRE O TUTOR LEGAL:</label>
+
+            <input type="text" id="direccion_padre_tutor" name="direccion_padre_tutor" placeholder="Ingrese el dato sugerido">
+
+            <label for="numero_emergencia">NÚMERO DE EMERGENCIA:</label>
+
+            <input type="tel" id="numero_emergencia" name="numero_emergencia" placeholder="Ingrese el dato sugerido">
+
+            <label for="informacion_medica">INFORMACIÓN MÉDICA RELEVANTE:</label>
+
+            <textarea id="informacion_medica" name="informacion_medica" rows="4" placeholder="Ingrese el dato sugerido"></textarea>
+
+            <label for="consentimiento"><input type="checkbox" id="consentimiento" name="consentimiento"> Doy el consentimiento de un padre o tutor legal para la inscripción de niños menores de edad.</label>
+            <br>
+            <label for="envio_info"><input type="checkbox" id="envio_info" name="envio_info"> Deseo que me envíen información sobre nuevos proyectos.</label>
+            <br>
+            <input type="submit" value="Enviar Inscripción">
+        </form>
+    </section>
+</div>
+</body>
+</html>
